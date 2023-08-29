@@ -8,12 +8,9 @@ import routes from '~react-pages'
 function App() {
 
   return (
-    <div className='w-full m-0 dark:bg-primary-800 root'>
-
+    <div className='w-full m-0'>
       <Suspense fallback={<p>Loading...</p>}>
-  
        {useRoutes(routes)}
-     
       </Suspense>
 
     </div>
