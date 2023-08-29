@@ -42,7 +42,7 @@ export default defineConfig({
       'primary': {
         50: '#ABC2FF',
         100: '#96B3FF',
-        200: '#6D95FF',
+        200: '#616161',
         300: '#4577FF',
         400: '#1a5Add',
         500: '#0042c2',
@@ -55,7 +55,7 @@ export default defineConfig({
         '50': '#FCE9FD',
         '100': '#F9D7EF',
         '200': '#F3B4D3',
-        '300': '#EE91B7',
+        '300': '#EEEEEE',
         '400': '#E86D9B',
         '500': '#E34A7F',
         '600': '#D4215C',
