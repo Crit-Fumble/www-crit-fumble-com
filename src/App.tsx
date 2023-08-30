@@ -1,5 +1,4 @@
 import React, { Suspense, useState } from 'react'
-import logo from './logo.svg'
 
 import {  useRoutes } from 'react-router-dom'
 

@@ -1,8 +1,6 @@
 //dashboard component
 import React, { useState, useEffect } from 'react';
-import logo from '../logo.svg'
 import useDarkMode from '../hooks/useDarkMode';
-import useDirection from '../hooks/useDirection';
 import { Link } from 'react-router-dom';
 import i18n from '../i18n';
 import { useTranslation } from 'react-i18next';

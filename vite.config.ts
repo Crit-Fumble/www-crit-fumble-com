@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import reactRefresh from '@vitejs/plugin-react-refresh';
 import Pages from 'vite-plugin-pages'
 import { VitePWA } from 'vite-plugin-pwa'
 import AutoImport from 'unplugin-auto-import/vite'
@@ -45,27 +44,28 @@ export default defineConfig({
       }
     },
   }),
-  VitePWA({  registerType: 'autoUpdate',
-  includeAssets: ['favicon.svg', 'safari-pinned-tab.svg'],
+  VitePWA({  
+  registerType: 'autoUpdate',
+  includeAssets: ['cfg-logo.jpg'],
   manifest: {
     name: 'Vitesse',
     short_name: 'Vitesse',
     theme_color: '#ffffff',
     icons: [
       {
-        src: '/pwa-192x192.png',
+        src: '/cfg-logo.jpg',
         sizes: '192x192',
-        type: 'image/png',
+        type: 'image/jpg',
       },
       {
-        src: '/pwa-512x512.png',
+        src: '/cfg-logo.jpg',
         sizes: '512x512',
-        type: 'image/png',
+        type: 'image/jpg',
       },
       {
-        src: '/pwa-512x512.png',
+        src: '/cfg-logo.jpg',
         sizes: '512x512',
-        type: 'image/png',
+        type: 'image/jpg',
         purpose: 'any maskable',
       },
     ],
