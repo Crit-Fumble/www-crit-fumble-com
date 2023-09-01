@@ -17,18 +17,26 @@ export default function Footer() {
     i18n.changeLanguage(lang)
   }
   return (
-    <footer style={styles.footer}>
+    <footer style = {styles.footer}>
       <div className="flex justify-center w-full pb-4">
         <nav className="flex mt-6 text-xl" dir="utd">
           <div>
             <a rel="noopener noreferrer" href={'https://www.patreon.com/critfumbleweb'} target="_blank">
               <img
-                src={"img/patreon.avif"}
+                src={"/img/patreon.avif"}
                 height={50}
                 alt={'Support us on Patreon'}
               />
             </a>
             &nbsp;&nbsp;&nbsp;&nbsp;
+
+            <a rel="noopener noreferrer" href={'https://startplaying.games/gm/crit-fumble/review'} target="_blank">
+              <img
+                src={"/img/startplaying.png"}
+                height={50}
+                alt={'Leave us a Review on StartPlaying.Games'}
+              />
+            </a>
             {/* <a rel="noopener noreferrer" href={https://affiliates.fantasygrounds.com/324256/15958/banner_7299} target="_blank">
               <img
                 src={"https://affiliates.fantasygrounds.com/img/banners/316034_3264676826.jpg"}
@@ -39,7 +47,7 @@ export default function Footer() {
             &nbsp;&nbsp;&nbsp;&nbsp;
             <a rel="noopener noreferrer" href={'https://discord.gg/dZzsst6TdG'} target="_blank">
               <img
-                src={"img/discord.avif"}
+                src={"/img/discord.avif"}
                 height={50}
                 alt={'Join our Discord Server'}
               />

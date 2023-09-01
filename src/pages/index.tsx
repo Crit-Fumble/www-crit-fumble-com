@@ -1,18 +1,6 @@
-import { Link, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
 import Home from '../layouts/home';
-import { useSelector } from 'react-redux';
-import { RootState } from '../stores/reducers';
-import { useTranslation } from 'react-i18next';
 
 export default function HomePage() {
-    const [name, setName] = useState('');
-    const navigate = useNavigate()
-    const username = useSelector((state: RootState) => state.user);
-    const { t } = useTranslation()
-    const features = ['This template has also the dark mode', 'Fully written in Typescript & TSX', 'File based routing', 'Layout system', 'Shared state management with Redux', 'React Hooks', 'Localisation with React-i18next', 'Use icons from any icon sets with classes & attributes']
-
-
     return (<Home>
         <div className="flex justify-center w-full h-full">
             <div className="flex flex-col items-center" >

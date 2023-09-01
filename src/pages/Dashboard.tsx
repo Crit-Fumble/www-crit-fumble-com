@@ -1,6 +1,4 @@
-import { useState, useEffect } from 'react';
 import Dashboard from '../layouts/dashboard';
-import { useTranslation } from 'react-i18next';
 import Card from '../components/core/Card';
 import 'chart.js/auto';
 import { Doughnut, Bar } from 'react-chartjs-2'

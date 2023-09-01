@@ -19,22 +19,22 @@ export default defineConfig({
     ['icon-btn', 'text-[0.9em] inline-block cursor-pointer select-none opacity-75 bg-transparent transition duration-200 text-white ease-in-out hover:opacity-100 hover:text-indigo-600'],
   ],
   presets: [
-    // presetUno(),
+    presetUno(),
     presetAttributify(),
     presetIcons({
       scale: 1.3,
       warn: true,
     }),
     presetTypography({
-      // className: 'prose prose-sm',
+      className: 'prose prose-sm',
     }),
-    // presetWebFonts({
-    //   fonts: {
-    //     sans: 'Rubik',
-    //     serif: 'DM Serif Display',
-    //     mono: 'DM Mono',
-    //   },
-    // }),
+    presetWebFonts({
+      fonts: {
+        sans: 'Rubik',
+        serif: 'DM Serif Display',
+        mono: 'DM Mono',
+      },
+    }),
     presetWind(),
   ],
   theme: {

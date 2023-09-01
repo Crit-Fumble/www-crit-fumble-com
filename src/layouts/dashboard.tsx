@@ -3,8 +3,9 @@ import React, { useState, useEffect } from 'react';
 import useDarkMode from '../hooks/useDarkMode';
 import { Link } from 'react-router-dom';
 import i18n from '../i18n';
-import { useTranslation } from 'react-i18next';
-
+// import { useTranslation } from 'react-i18next';
+// TODO: resolve i18n console errors
+const useTranslation = ()=>({t:(x: any) => x});
 
 export default function Dashboard(props: {
     children: React.ReactNode
@@ -78,9 +79,9 @@ export default function Dashboard(props: {
                 <div className='flex flex-col h-full'>
                     <div className='flex items-center justify-center h-16 text-5xl bg-primary-900 '>
                         {/* <img className='w-auto h-16' src={logo} alt='logo' /> */}
-                        <Link to="/" className='i-carbon-flash-filled text-sky-400'>
+                        {/* <Link to="/" className='i-carbon-flash-filled text-sky-400'>
 
-                        </Link>
+                        </Link> */}
 
                     </div>
                     <div className='mt-5'>
