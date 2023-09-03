@@ -48,7 +48,7 @@ export default function Footer() {
               />
             </a>
           </div>
-          <div className={linkClass}>
+          {/* <div className={linkClass}>
             <a rel="noopener noreferrer" href={'https://affiliates.fantasygrounds.com/324256/15958/banner_7299'} target="_blank">
               <img
                 src={"https://affiliates.fantasygrounds.com/img/banners/316034_3264676826.jpg"}
@@ -56,7 +56,7 @@ export default function Footer() {
                 alt={'Shop on Fantasy Grounds'}
               />
             </a>
-          </div>
+          </div> */}
         </nav>
       </div>
       <div className={'text-center'}>
