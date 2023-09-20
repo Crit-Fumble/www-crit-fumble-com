@@ -15,57 +15,46 @@ export default function Dashboard(props: {
     const { t } = useTranslation()
     const sidebarItems = [
         {
-            title: t('sidebar.dashboard'),
+            title: t('Dashboard'),
             icon: 'i-carbon-dashboard',
-            path: '/dashboard'
+            path: '/dashboard',
         },
         {
-            title: t('sidebar.components'),
+            title: t('GM'),
             icon: 'i-carbon-assembly-cluster',
-            path: '/components/buttons',
+            // path: '/ttrpg/active-campaigns',
             children: [
                 {
-                    title: 'Buttons',
-                    path: '/components/buttons'
+                    title: 'GM Screen',
+                    path: '/gm/screen'
                 },
                 {
-                    title: 'Cards',
-                    path: '/components/cards'
-
-
+                    title: 'GM Settings',
+                    path: '/gm/settings'
                 },
             ]
         },
-        {
-            title: t('sidebar.team'),
-            icon: 'i-carbon-collaborate',
-            path: '/team'
-        },
-        {
-            title: t('sidebar.projects'),
-            icon: 'i-carbon-document',
-            path: '/projects'
-        },
-        {
-            title: t('sidebar.calendar'),
-            icon: 'i-carbon-calendar',
-            path: '/calendar'
-        },
-        {
-            title: t('sidebar.reports'),
-            icon: 'i-carbon-report-data',
-            path: '/reports'
-        },
+        // {
+        //     title: t('TTRPG'),
+        //     icon: 'i-carbon-assembly-cluster',
+        //     // path: '/ttrpg/active-campaigns',
+        //     children: [
+        //         {
+        //             title: 'Active Campaigns',
+        //             path: '/ttrpg/activecampaigns'
+        //         },
+        //         {
+        //             title: 'Inactive Campaigns',
+        //             path: '/ttrpg/inactivecampaigns'
+        //         },
+        //     ]
+        // }
 
     ]
 
     const [currentIndex, setCurrentIndex] = useState(-1);
 
-
-
     const { toggleDark } = useDarkMode()
-
-
 
     function changeLang(lang: string) {
         i18n.changeLanguage(lang)
@@ -88,10 +77,9 @@ export default function Dashboard(props: {
                         <nav className='flex-1 mt-5 text-xs font-medium leading-5 md:text-sm '>
                             <ul className='m-0 ml-0 list-none'>
                                 {sidebarItems.map((item, index) => <li key={item.title} className={` ${currentIndex === index ? 'bg-primary-600' : ''}`}> <Link
-
                                     onClick={() => setCurrentIndex(index === currentIndex ? -1 : index)}
                                     className={`${sidebarCollapsed ? 'justify-center' : ''} ${currentIndex === index ? 'bg-primary-600' : ''}  ${currentIndex === index ? 'bg-primary-700' : ''} sidebar-item block py-4  px-4 flex items-center rtl:space-x-reverse space-x-2 text-white  decoration-none  leading-5  group hover:bg-primary-600  focus:outline-none  transition duration-150 ease-in-out`}
-                                    to={item.path}
+                                    to={item.path as any}
                                 >
                                     <span className={`${item.icon} text-lg block`}></span>
                                     {!sidebarCollapsed && <span className='block' >{item.title}</span>}

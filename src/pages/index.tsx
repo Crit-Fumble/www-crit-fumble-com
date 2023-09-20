@@ -2,7 +2,7 @@ import Home from '../layouts/home';
 
 export default function HomePage() {
     return (<Home>
-        <div className="flex justify-center w-full h-full">
+        <div className="flex justify-center h-full">
             <div className="flex flex-col items-center" >
                 <img className={'p4 rounded-full'} src='img/cfg-logo.jpg' height={'256'} />
                 <h1 className={'pb4'}>Crit Fumble Gaming</h1>
