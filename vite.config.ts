@@ -46,24 +46,24 @@ export default defineConfig({
   }),
   VitePWA({  
   registerType: 'autoUpdate',
-  includeAssets: ['cfg-logo.jpg'],
+  includeAssets: ['./img/cfg-logo.jpg'],
   manifest: {
     name: 'Vitesse',
     short_name: 'Vitesse',
     theme_color: '#ffffff',
     icons: [
       {
-        src: '/cfg-logo.jpg',
+        src: './img/cfg-logo.jpg',
         sizes: '192x192',
         type: 'image/jpg',
       },
       {
-        src: '/cfg-logo.jpg',
+        src: './img/cfg-logo.jpg',
         sizes: '512x512',
         type: 'image/jpg',
       },
       {
-        src: '/cfg-logo.jpg',
+        src: './img/cfg-logo.jpg',
         sizes: '512x512',
         type: 'image/jpg',
         purpose: 'any maskable',

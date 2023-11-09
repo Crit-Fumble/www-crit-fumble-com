@@ -24,7 +24,7 @@ export default function Footer() {
           <div className={linkClass}>
             <a rel="noopener noreferrer" href={'https://www.patreon.com/critfumbleweb'} target="_blank">
               <img
-                src={"/img/patreon.avif"}
+                src={"./img/patreon.avif"}
                 height={50}
                 alt={'Support us on Patreon'}
               />
@@ -33,7 +33,7 @@ export default function Footer() {
           {/* <div className={linkClass}>
             <a rel="noopener noreferrer" href={'https://startplaying.games/gm/crit-fumble/review'} target="_blank">
               <img
-                src={"/img/startplaying.png"}
+                src={"./img/startplaying.png"}
                 height={50}
                 alt={'Leave us a Review on StartPlaying.Games'}
               />
@@ -42,7 +42,7 @@ export default function Footer() {
           <div className={linkClass}>
             <a rel="noopener noreferrer" href={'https://app.roll20.net/users/6244861/crit-fumble-gaming'} target="_blank">
               <img
-                src={"/img/roll20.png"}
+                src={"./img/roll20.png"}
                 height={50}
                 alt={'View our Roll20 Profile'}
               />
@@ -62,7 +62,7 @@ export default function Footer() {
       <div className={'text-center'}>
         <a rel="noopener noreferrer" href={'https://discord.gg/dZzsst6TdG'} target="_blank">
           <img
-            src={"/img/discord.avif"}
+            src={"./img/discord.avif"}
             height={50}
             alt={'Join our Discord Server'}
           />

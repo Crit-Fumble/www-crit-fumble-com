@@ -1,20 +1,23 @@
 {
-  "name": "crit-fumble-gaming-www",
-  "private": true,
+  "homepage": "https://crit-fumble.com",
+  "name": "www-crit-fumble-com",
   "version": "0.0.1",
   "main": "main.tsx",
-  "engines" : { 
-    "node" : "17.9.1"
+  "engines": {
+    "node": "^18.17.1"
   },
   "scripts": {
     "start": "vite",
     "develop": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "echo crit-fumble.com > ./dist/CNAME && gh-pages -d dist"
   },
   "dependencies": {
     "chart.js": "^3.9.1",
     "faker": "^5.5.3",
+    "gh-pages": "^6.0.0",
     "i18next": "^21.10.0",
     "i18next-browser-languagedetector": "^6.1.8",
     "react": "^18.2.0",
