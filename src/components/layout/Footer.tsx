@@ -30,6 +30,15 @@ export default function Footer() {
               />
             </a>
           </div>
+          <div className={linkClass}>
+            <a rel="noopener noreferrer" href={'https://github.com/Crit-Fumble'} target="_blank">
+              <img
+                src={"./img/github.png"}
+                height={50}
+                alt={'Follow us on GitHub'}
+              />
+            </a>
+          </div>
           {/* <div className={linkClass}>
             <a rel="noopener noreferrer" href={'https://startplaying.games/gm/crit-fumble/review'} target="_blank">
               <img
@@ -38,8 +47,8 @@ export default function Footer() {
                 alt={'Leave us a Review on StartPlaying.Games'}
               />
             </a>
-          </div>
-          <div className={linkClass}>
+          </div> */}
+          {/* <div className={linkClass}>
             <a rel="noopener noreferrer" href={'https://app.roll20.net/users/6244861/crit-fumble-gaming'} target="_blank">
               <img
                 src={"./img/roll20.png"}
